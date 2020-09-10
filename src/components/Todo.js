@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default ({id, activity, time}) => (
+export default ({id, activity, time, deleteTodo}) => (
+     
     <div>
-        {activity} | {time} | Id: {id}
+        <p className="fade-in">
+        <span>{activity}</span>
+        {/* <span><button onClick={() => deleteTodo(id)}>Delete</button></span> */}
+        </p>
     </div>
 )
